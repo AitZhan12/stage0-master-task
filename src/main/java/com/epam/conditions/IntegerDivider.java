@@ -12,7 +12,7 @@ public class IntegerDivider {
         int result = quotient * divider;
 
         if (result == dividend) {
-            System.out.println("cannot be divided completely");
+            System.out.println("can be divided completely");
         } else {
             System.out.println("cannot be divided completely");
         }

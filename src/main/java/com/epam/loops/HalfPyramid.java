@@ -6,7 +6,7 @@ public class HalfPyramid {
         for (int i = 1; i <= height; i++) {
             // Print spaces
             for (int s = 1; s <= height - i; s++) {
-                System.out.print("  ");
+                System.out.print("");
             }
 
             // Print stars (*)
