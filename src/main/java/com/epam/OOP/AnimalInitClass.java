@@ -7,7 +7,7 @@ public class AnimalInitClass {
         Animal bird = new Bird();
 
         System.out.println(dog.getDescription("brown", 5, true));
-        System.out.println(bird.getDescription("blue", 2, false));
+        System.out.println(bird.getDescription("blue", 1, false));
     }
 
     /**

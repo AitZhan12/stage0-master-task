@@ -13,10 +13,10 @@ public class ArrayTasks {
      */
     public String[] seasonsArray() {
         String[] seasons = {
-                "Winter",
-                "Spring",
-                "Summer",
-                "Autumn (Fall)"
+                "winter",
+                "spring",
+                "summer",
+                "autumn"
         };
 
         for (String season : seasons) {
