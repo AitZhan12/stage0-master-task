@@ -13,7 +13,7 @@ public class CoordinatePane {
         } else if (x > 0 && y < 0) {
             System.out.println("fourth");
         } else if (x == 0 && y == 0) {
-            System.out.println("zero (origin)");
+            System.out.println("zero");
         } else if (x == 0) {
             System.out.println("Y-axis");
         } else {

@@ -10,7 +10,7 @@ public class NumberReverter {
 
         int reversedNumber = digit1 * 100 + digit2 * 10 + digit3;
 
-        System.out.println("reversed number is " + reversedNumber);
+        System.out.println(reversedNumber);
     }
 
 }
