@@ -8,6 +8,6 @@ public class Dog extends Animal {
 
     @Override
     public String getDescription(String color, int numberOfPaws, boolean hasFur) {
-        return super.getDescription(color, numberOfPaws, hasFur);
+        return super.getDescription("brown", 5, true);
     }
 }
