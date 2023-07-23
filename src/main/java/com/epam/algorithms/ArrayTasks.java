@@ -11,7 +11,17 @@ public class ArrayTasks {
      * Return a String[] array that will list all the seasons of the year, starting with winter.
      */
     public String[] seasonsArray() {
-        return null;
+        String[] seasons = {
+                "Winter",
+                "Spring",
+                "Summer",
+                "Autumn (Fall)"
+        };
+
+        for (String season : seasons) {
+            System.out.println(season);
+        }
+        return seasons;
     }
 
     /**
@@ -23,7 +33,11 @@ public class ArrayTasks {
      * length = 1  -> [1] length = 3  -> [1, 2, 3] length = 5  -> [1, 2, 3, 4, 5]
      */
     public int[] generateNumbers(int length) {
-        return null;
+        int[] array = new int[length];
+        for (int i = 0; i < length; i++) {
+            array[i] = i;
+        }
+        return array;
     }
 
     /**
@@ -34,7 +48,11 @@ public class ArrayTasks {
      * arr = [1, 3, 5]   -> sum = 9 arr = [5, -3, -4] -> sum = -2
      */
     public int totalSum(int[] arr) {
-        return 0;
+        int sum = 0;
+        for (int j : arr) {
+            sum = sum + j;
+        }
+        return sum;
     }
 
     /**
@@ -46,7 +64,14 @@ public class ArrayTasks {
      * arr = [99, -7, 102], number = -7    ->   2 arr = [5, -3, -4],   number = 10    ->  -1
      */
     public int findIndexOfNumber(int[] arr, int number) {
-        return 0;
+
+        int len = arr.length;
+        for (int i = 0; i < len; i++) {
+            if (arr[i] == number) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     /**
@@ -58,7 +83,11 @@ public class ArrayTasks {
      * "pineapple"]
      */
     public String[] reverseArray(String[] arr) {
-        return null;
+        String[] reversedArr = new String[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            reversedArr[i] = arr[arr.length - 1 - i];
+        }
+        return reversedArr;
     }
 
     /**
@@ -70,7 +99,23 @@ public class ArrayTasks {
      * arr = [1,-2, 3]      -> [1, 3] arr = [-1, -2, -3]   -> [] arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
-        return null;
+        int positiveCount = 0;
+        for (int num : arr) {
+            if (num > 0) {
+                positiveCount++;
+            }
+        }
+
+        int[] positiveArr = new int[positiveCount];
+        int index = 0;
+        for (int num : arr) {
+            if (num > 0) {
+                positiveArr[index] = num;
+                index++;
+            }
+        }
+
+        return positiveArr;
     }
 
     /**
